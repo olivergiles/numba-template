@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools", "wheel"]
+requires = ["setuptools", "wheel", "pip"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -12,9 +12,14 @@ classifiers = [
     "Programming Language :: Python :: 3",
 ]
 dependencies = [
-    "requests",
-    'importlib-metadata; python_version<"3.8"',
+    "numba"
 ]
 dynamic = ["version"]
+
+[tool.setuptools.packages.find]
+where = ["src"]  
+include = ["my_numba_package*"]  
+exclude = ["my_package.tests*"]  
+namespaces = false
 
 [project.optional-dependencies]
