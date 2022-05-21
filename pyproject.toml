@@ -1,19 +1,25 @@
-[build-system]
-requires = ["setuptools", "wheel", "pip", "numba"]
-build-backend = "setuptools.build_meta"
-
 [project]
 name = "my_numba_package"
 description = "My package description"
 readme = "README.md"
+authors = [
+    { name = "Oliver Giles", email = "ogiles@email.com" }
+]
 license = {text = "BSD 3-Clause License"}
 classifiers = [
     "Programming Language :: Python :: 3",
 ]
 dynamic = ["version"]
+dependencies = [
+    "numba"
+]
 
 [tool.setuptools.packages.find]
 where = ["src"]  
 include = ["my_numba_package*"]  
 exclude = ["my_package.tests*"]  
 namespaces = false
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
