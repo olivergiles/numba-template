@@ -2,8 +2,8 @@ from numba import jit
 from numba.pycc import CC
 from math import radians, sin, cos, asin, sqrt
 
-cc = CC("compiled_my_module")
-cc._source_module = "my_module.haversine"
+cc = CC("compiled_haversine")
+cc._source_module = "my_numba_package.haversine"
 
 @cc.export("fhaversine", "f8(f8,f8,f8,f8)")
 def jit_haversine(lon1,lat1,lon2,lat2):

@@ -1,9 +1,0 @@
-README.md
-pyproject.toml
-src/my_numba_package/__init__.py
-src/my_numba_package/haversine.py
-src/my_numba_package.egg-info/PKG-INFO
-src/my_numba_package.egg-info/SOURCES.txt
-src/my_numba_package.egg-info/dependency_links.txt
-src/my_numba_package.egg-info/requires.txt
-src/my_numba_package.egg-info/top_level.txt
