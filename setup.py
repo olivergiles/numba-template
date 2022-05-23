@@ -8,7 +8,7 @@ if __name__ == "__main__":
     requirements = [x.strip() for x in content if "git+" not in x]
 
     setup(
-        name="numba_haversine",
+        name="my_numba_package",
         version="1.0",
         description="Project Description",
         packages=find_packages(),
