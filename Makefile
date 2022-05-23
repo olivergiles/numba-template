@@ -2,7 +2,7 @@ test:
 	@pytest
 
 install:
-	@pip install .
+	@pip install -e .
 
 clean:
 	@rm -rf **.egg-info 
