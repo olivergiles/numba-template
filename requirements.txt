@@ -4,3 +4,4 @@ setuptools>=26
 twine
 wheel>=0.29
 numba
+pytest
