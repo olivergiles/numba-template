@@ -1,9 +1,9 @@
 test:
-	pytest
+	@pytest
 
 install:
-	pip install .
+	@pip install .
 
 clean:
-	rm -rf **.egg-info 
-	find . -type d -name __pycache__ -exec rm -r {} \+
+	@rm -rf **.egg-info 
+	@find . -type d -name __pycache__ -exec rm -r {} \+
